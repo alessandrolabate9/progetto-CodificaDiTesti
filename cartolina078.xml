@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<?xml-stylesheet type="text/xsl" href="style.xsl"?> 
+<TEI xml:id="cart78">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <!-- TITOLO NB: non corrisponde completamente alla voce TITOLO della tabella perché si tratta del titolo della edizione digitale -->
+                <title>Incontro di Petrarca e Laura in Avignone - Edizione digitale diplomatico-interpretativa</title>
+                
+            </titleStmt>
+            
+            <publicationStmt>
+                <publisher>Unipi</publisher>
+                <pubPlace>Pisa</pubPlace>
+                <availability>
+                    <p>Available under licence only</p>
+                </availability>
+                <date when="2019">2019</date>
+                <distributor>LabCD</distributor>
+                <address>
+                    <addrLine>Laboratorio di Cultura Digitale - Università di Pisa</addrLine>
+                    <addrLine>Pisa</addrLine>
+                </address>
+            </publicationStmt>
+            
+            <!-- NOTE NB: mettere qui tutto ciò che non rientra nella codifica -->
+            <notesStmt>
+                <note n="1">Sul retro della cartolina non è presente il mittente, nè il timbro nè il francobollo. Suppongo che la cartolina non fosse mai stata spedita.</note>
+                <note n="2">Sul retro presenta stampata “Proprietà Artistica E.Sborgi-Firenze”, Simonetti. </note>
+                <note n="3">Simonetti è l'autore dell'opera</note>
+            </notesStmt>
+            
+            <sourceDesc>
+                <bibl>
+                    <!-- TITOLO Quello che si ricava dalla cartolina; Se un documento composto da immagini 
+                        non presenta un titolo o altri elementi considerabili come titolo, si formula un titolo sintetico 
+                        registrandolo entro parentesi quadre [Venere al bagno] ma indicando dentro la codifica come qui sotto esemplificato-->
+                    
+                    <title type="main" resp="author">Incontro di Petrarca e Laura in Avignone</title>
+                    <author>Simonetti</author>
+                    <!-- PRODUZIONE Chi ha prodotto / pubblicato la cartolina. Se non presente togliere il tag  -->
+                    <publisher>E. Sborgi, Firenze</publisher>
+                    <!-- LUOGO -->
+                    <pubPlace>Avignone</pubPlace>
+                    <!-- CRONOLOGIA, attenzione si riferisce solo alla data di stampa -->
+                    <date>1917</date>
+                </bibl>
+
+                <msDesc>
+                    <!-- COLLOCAZIONE SPECIFICA -->
+                    <!-- CODICE IDENTIFICATIVO -->
+                    <msIdentifier>
+                        <country>Italia</country>
+                        <settlement>La Spezia (SP)</settlement>
+                        <!-- COLLOCAZIONE SPECIFICA -->
+                        <repository>Museo Civico Etnografico "Giovanni Podenzana", Sezione dei cimeli garibaldini e della Prima Guerrra Mondiale</repository>
+                        <!-- CODICE IDENTIFICATIVO -->
+                        <idno>7694_078_001/002</idno>
+                    </msIdentifier>
+                    
+                    <!-- Informazioni sul contenuto della cartolina -->
+                    <!-- DESCRIZIONE -->
+                    <msContents>
+                        <summary>Cartolina Artistica</summary>
+                        <textLang>Italiano</textLang>
+                    </msContents>
+                    
+                    
+                    
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <objectType>Cartolina</objectType>
+                                    <!-- MATERIALI -->
+                                    <material>Carta</material>
+                                    <!-- DIMENSIONE -->
+                                    <dimensions unit="cm">
+                                        <height>9</height>
+                                        <width>14</width>
+                                    </dimensions>
+                                </support>
+                                
+<!-- CONSERVAZIONE 
+buono = non occorrono interventi di restauro;
+discreto = perfettamente leggibile in tutte le componenti ma con rischi di deterioramento per usura;
+mediocre = perfettamente leggibile, ma mancano alcune sue parti;
+cattivo = intaccato da parassiti o deteriorato da cattivi interventi passati o mancanti di parti rilevanti, necessita di restauro-->
+                                <condition>Buono</condition>
+                            </supportDesc>
+                        </objectDesc>
+                    </physDesc>
+            
+                    
+                </msDesc>
+                
+                <!-- NOMI -->
+                
+                <listPerson>
+                    
+                   
+                    <person xml:id="AS">
+                        <persName>
+                            <forename>Amedeo</forename>
+                            <surname>Simonetti</surname>
+                        </persName>
+                        <sex>M</sex>
+                        <note>autore dell'opera</note>
+                    </person>
+                    <person xml:id="A">
+                        <persName>
+                            <forename>Angelina</forename>
+                        </persName>
+                        <sex>F</sex>
+                        <note>destinatario</note>
+                    </person>
+                </listPerson>
+                
+                <listPlace>
+                    <place xml:id="RV-BSB">
+                        <placeName>
+                            <choice>
+                                <sic>Borgo S. Biaggio</sic>
+                                <corr>Borgo S. Biagio</corr>
+                            </choice>
+                        </placeName>
+                        <settlement type="località">città</settlement>
+                        <district type="comune">Ravenna</district>
+                        <district type="provincia">RV</district>
+                        <country key="N">IT</country>
+                    </place>
+                </listPlace>
+                
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <!-- DATA data di invio da timbro (postage) o da manoscritto (writing) -->
+                    <date type="writing" when="1917">1917</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="#A">Angelina</persName>
+                    <placeName ref="#RV-BSB">
+                        <choice>
+                            <sic>Borgo S. Biaggio</sic>
+                            <corr>Borgo S. Biagio</corr>
+                        </choice>
+                    </placeName>
+                </correspAction>
+            </correspDesc>
+            
+            <textClass>
+                <keywords>
+                    <!-- soggettario -->
+                    <!-- tipologia -->
+                    <!-- descrizione -->
+                    <term>Cartolina </term>
+                    <term>Cartolina Artistica </term>
+                    <term>Petrarca e Laura si incontrano ad Avignone in una piazza </term>
+                </keywords>
+            </textClass>
+            
+            <langUsage>
+                <language ident="it-IT">italiano</language>
+                <language ident="en-GB">English</language>
+                <language ident="fr-FR">Francaise</language>
+                <language ident="de-DE">Deutsche</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+
+    <facsimile>
+            <!-- fronte -->
+        <surface xml:id="front078">
+            <graphic url='./img/7694-078F.png' width='800px' height='600px' />
+            <zone ulx="2" uly="2" lrx="800" lry="596" xml:id="cart78-0" />
+        </surface>
+        <!-- retro -->
+    <surface xml:id="back078">
+        <graphic url='./img/7694-078R.png' width='800px' height='600px' />
+        <zone ulx="6" uly="5" lrx="746" lry="138"  xml:id="cart78-1" />
+        <zone ulx="0" uly="141" lrx="26" lry="473"  xml:id="cart78-2" />
+        <zone ulx="33" uly="143" lrx="375" lry="576"  xml:id="cart78-3" />
+        <zone ulx="392" uly="146" lrx="794" lry="579"  xml:id="cart78-4" />
+        <zone ulx="14" uly="516" lrx="447" lry="591"  xml:id="cart78-5" />
+    </surface>
+    </facsimile>
+    
+           <!-- DEFINIZIONE -->
+    <text type="cartolina" xml:id="cartolina_078">
+        <!-- TRASCRIZIONE -->
+        <body>
+            <div type="fronte" facs="#front078">
+                <figure facs="#cart78-0">
+                    <figDesc>La cartolina mostra in primo piano l'immagine di Petrarca, il quale  con la mano sinistra sul mento sembra in atteggiamento assorto. 
+                        In secondo piano, Laura, accompagnata dall'ancella.
+                        Sullo sfondo è raffigurata la città di Avignone.
+                    </figDesc>
+                    <head>Incontro di Petrarca e Laura in Avignone</head>
+                </figure>
+            </div>
+
+            <div type="retro" facs="#back078">
+                    <div type="message" facs="#cart78-3">
+                        <p>
+                            <milestone unit="verse" n="1"/>Sempre rammentandoti
+                            <milestone unit="verse" n="2"/>ti faccio i più sin<retrace cause="unclear">c</retrace>eri
+                            <milestone unit="verse" n="3"/>auguri Pasquali da part<supplied>e</supplied>
+                            <milestone unit="verse" n="4"/>mia <del rend="overtyped"><gap reason="illegible" quantity="1" unit="character"/></del> <name type="person"><unclear reason="parterased">Cesare</unclear></name> e dal mio
+                            <milestone unit="verse" n="5"/><name type="person">Livio<certainty locus="name" degree="0.4" /></name> e <retrace cause="unclear">tu</retrace>tta l'intera
+                            <milestone unit="verse" n="6"/>famiglia tanti saluti
+                            <milestone unit="verse" n="7"/>e baci<pc>.</pc>
+
+                        </p>
+                        <closer>
+                            Tua 
+                            <signed>
+                            Teresina <unclear reason="illegible" agent="ink">Gambi</unclear>
+                            </signed>
+                        </closer>
+                    </div>
+                
+                <div type="destination" facs="#cart78-4">
+                    <p> 
+                        
+                        <address>
+                            <addrLine><gap reason="irrelevant" agent="hole" /><corr>Alla</corr> Distin<gap reason="irrelevant" agent="hole"/>ta Signorina</addrLine>
+                            <addrLine><persName ref="#A"><forename> <unclear reason="faded">Antani</unclear> </forename> <surname>Angelina</surname> </persName></addrLine>
+                            <addrLine>Via Dei Poggi</addrLine>
+                            <addrLine> <placeName ref="#RV-BSB">Borgo S. Biaggio</placeName></addrLine>
+                        </address>
+                    </p>
+                </div>
+                <div type="stampe" xml:id="stampe78">
+                    <p facs="#cart78-1">
+                        <seg>
+                            <idno>78</idno>
+                        </seg>
+
+                        <seg>
+                            <del type="overstrike">
+                            CARTOLINA POSTALE <lb/>
+                            POST CARD - CARTE POSTALE - POSTKARTE <lb/>
+                            UNION POSTALE UNIVERSELLE <lb/>
+                            </del>
+                        </seg>
+                    </p>
+                    <p facs="#cart78-2">
+                        <seg>Proprietà Artistica E. SBORGI - Firenze.</seg>
+                    </p>      
+                    <p facs="#cart78-3">
+                        <seg>
+                            <del type="overstrike">CORRESPONDENCE</del>
+                        </seg>
+                        <seg>
+                            Incontro di Petrarca e Laura<lb/>
+                            in Avignone<lb/>
+                        </seg>
+                    </p>
+                    <p facs="#cart78-4">
+                        <seg>ADRESSE</seg>
+                        <seg>383</seg>
+                    </p>    
+                    <p facs="#cart78-5">
+                        <seg>Firenze</seg>
+                        <seg>Simonetti</seg>
+                    </p>                    
+                </div>
+            </div>
+        </body>
+        <back/>
+    </text>
+</TEI>
+
+

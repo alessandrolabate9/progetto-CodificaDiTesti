@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<?xml-stylesheet type="text/xsl" href="style.xsl"?> 
+<TEI xml:id="cart74">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <!-- TITOLO NB: non corrisponde completamente alla voce TITOLO della tabella perché si tratta del titolo della edizione digitale -->
+                <title>Frammento - Edizione digitale diplomatico-interpretativa</title>
+                
+            </titleStmt>
+            
+            <publicationStmt>
+                <publisher>Unipi</publisher>
+                <pubPlace>Pisa</pubPlace>
+                <availability>
+                    <p>Available under licence only</p>
+                </availability>
+                <date when="2019">2019</date>
+                <distributor>LabCD</distributor>
+                <address>
+                    <addrLine>Laboratorio di Cultura Digitale - Università di Pisa</addrLine>
+                    <addrLine>Pisa</addrLine>
+                </address>
+            </publicationStmt>
+            
+
+            <!-- NOTE NB: mettere qui tutto ciò che non rientra nella codifica -->
+
+            <notesStmt>
+                <note n="1">Sul fronte della cartolina, è riportato in basso a destra il nome dell'autore "B. Cascella"</note>
+                <note n="2">Sul retro è riportato l'indirizzo di spedizione, il timbro e il francobollo</note>
+            </notesStmt>
+            
+            <sourceDesc>
+                <bibl>
+                    <!-- TITOLO Quello che si ricava dalla cartolina; Se un documento composto da immagini 
+                        non presenta un titolo o altri elementi considerabili come titolo, si formula un titolo sintetico 
+                        registrandolo entro parentesi quadre [Venere al bagno] ma indicando dentro la codifica come qui sotto esemplificato-->
+                    
+                    <title type="main" resp="author">Frammento</title>
+                    <author><persName><forename full="init">B.</forename> <surname>Cascella</surname></persName></author>
+                    <!-- PRODUZIONE Chi ha prodotto / pubblicato la cartolina. Se non presente togliere il tag  -->
+                    <publisher>Stab. Gustavo Modiano &amp; C. - Milano </publisher>
+                    <!-- LUOGO -->
+                    <!-- CRONOLOGIA, attenzione si riferisce solo alla data di stampa -->
+                    <date>1918</date>
+                </bibl>
+                <msDesc>
+                    <!-- COLLOCAZIONE SPECIFICA -->
+                    <!-- CODICE IDENTIFICATIVO -->
+                    <msIdentifier>
+                        <country>Italia</country>
+                        <settlement>La Spezia (SP)</settlement>
+                        <!-- COLLOCAZIONE SPECIFICA -->
+                        <repository>Museo Civico Etnografico "Giovanni Podenzana", Sezione dei cimeli garibaldini e della Prima Guerrra Mondiale</repository>
+                        <!-- CODICE IDENTIFICATIVO -->
+                        <idno>7694_074_001/002</idno>
+                    </msIdentifier>
+                    
+                    <!-- Informazioni sul contenuto della cartolina -->
+                    <!-- DESCRIZIONE -->
+                    <msContents>
+                        <summary>Cartolina Artistica</summary>
+                        <textLang>Italiano</textLang>
+                    </msContents>
+                    
+                    
+                    
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <objectType>Cartolina</objectType>
+                                    <!-- MATERIALI -->
+                                    <material>Carta</material>
+                                    <!-- DIMENSIONE -->
+                                    <dimensions unit="cm">
+                                        <height>9</height>
+                                        <width>14</width>
+                                    </dimensions>
+                                    <stamp>francobollo 5 centesimi - Regno d'Italia</stamp>
+                                </support>
+  <!-- CONSERVAZIONE 
+buono = non occorrono interventi di restauro;
+discreto = perfettamente leggibile in tutte le componenti ma con rischi di deterioramento per usura;
+mediocre = perfettamente leggibile, ma mancano alcune sue parti;
+cattivo = intaccato da parassiti o deteriorato da cattivi interventi passati o mancanti di parti rilevanti, necessita di restauro-->
+                                <condition>Buono</condition>
+                            </supportDesc>
+                        </objectDesc>
+                    </physDesc>
+            
+               </msDesc>
+                
+                <!-- NOMI -->
+                <listPerson>
+                    
+                   
+                    <person xml:id="GC">
+                        <persName>
+                            <forename>Giovanni</forename>
+                            <surname>Coliola </surname>
+                        </persName>
+                        <sex>M</sex>
+                        <note>mittente</note>
+                    </person>
+                    <person xml:id="OT">
+                        <persName>
+                            <forename>Oliva</forename>
+                            <surname>Turtura</surname>
+                        </persName>
+                        <sex>F</sex>
+                        <note>destinatario</note>
+                    </person>
+                    <person xml:id="BC">
+                        <persName>
+                            <forename>Basilio</forename>
+                            <surname>Cascella</surname>
+                        </persName>
+                        <sex>M</sex>
+                        <note>autore dell'opera</note>
+                    </person>
+                </listPerson>
+                
+                <listPlace>
+                    <place xml:id="RV">
+                        <placeName>Ravenna</placeName>
+                        <settlement type="località">città</settlement>
+                        <district type="comune">Ravenna</district>
+                        <district type="provincia">RV</district>
+                        <country key="N">IT</country>
+                        <note>luogo di destinazione</note>
+                    </place>
+                    <place xml:id="MO">
+                        <placeName>Vignola</placeName>
+                        <settlement type="località">città</settlement>
+                        <district type="comune">Modena</district>
+                        <district type="provincia">MO</district>
+                        <country key="N">IT</country>
+                        <note>luogo di provenienza</note>
+                    </place>
+                </listPlace>
+            </sourceDesc>
+        </fileDesc>
+        
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName ref="#GC">
+                        <forename>Giovanni</forename>
+                        <surname>Coliola </surname>
+                    </persName>
+                    <placeName ref="#MO">Vignola</placeName>
+                    <!-- DATA data di invio da timbro (postage) o da manoscritto (writing) -->
+                    <date type="postage" when="1918-06-11">1918/06/11</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="#OT">
+                        <forename>Oliva</forename>
+                        <surname>Turtura</surname>
+                    </persName>
+                    <placeName ref="#RV">Ravenna</placeName>
+                </correspAction>
+            </correspDesc>
+            
+            <textClass>
+                <keywords>
+                    <!-- soggettario -->
+                    <!-- tipologia -->
+                    <!-- descrizione -->
+                    <term>Cartolina </term>
+                    <term>Cartolina Artistica </term>
+                    <term>Madre e figlio si abbracciano</term>
+                </keywords>
+            </textClass>
+            
+            <langUsage>
+                <language ident="it-IT">italiano</language>
+                <language ident="en-GB">English</language>
+            </langUsage>
+        </profileDesc>
+    
+    </teiHeader>
+    <facsimile>
+        <surface xml:id="front074">
+            <graphic url='img/7694-074F.png' width='600px' height='800px' />
+            <zone ulx="6" uly="5" lrx="591" lry="523" xml:id="cart74-0" />
+            <zone ulx="17" uly="533" lrx="591" lry="784" xml:id="cart74-1" />
+        </surface>
+        <surface xml:id="back074">
+            <graphic url='img/7694-074R.png' width='800px' height='600px' />
+            <zone ulx="15" uly="11" lrx="299" lry="585" xml:id="cart74-2" />
+            <zone ulx="65" uly="72" lrx="378" lry="558" xml:id="cart74-3" />
+            <zone ulx="387" uly="6" lrx="792" lry="549" xml:id="cart74-4" />
+            <zone ulx="393" uly="561" lrx="794" lry="596" xml:id="cart74-5" />
+        </surface>
+    </facsimile>
+    <!-- DEFINIZIONE -->
+    <text type="cartolina" xml:id="cartolina_074">
+        <!-- TRASCRIZIONE -->
+        <body>
+            <div facs="#front074" type="fronte">
+                <figure facs="#cart74-0">
+                    <figDesc>L'immagine in bianco e nero, raffigura madre e figlio che si abbracciano.
+                    In basso a destra, è presente la firma dell'autore: B. Cascella
+                    </figDesc>
+                    <head>Frammento (B. Cascella)</head>
+                </figure>
+                <div facs="#cart74-1">
+                    <ab type="caption">
+                        <said>
+                        <pc>-</pc>Figlio<pc>,</pc> soffrirò ma sarò forte se 
+                        tu farai il tuo dovere<pc>.</pc>
+                        </said>
+                        <said>
+                        <pc>-</pc>Mamma<pc>,</pc> piuttosto morto
+                        che traditore<pc>.</pc>
+                        </said>
+                    </ab>
+                </div>
+            </div>
+            <div facs="#back074" type="retro">
+                <div type="message" facs="#cart74-3">
+                    <opener  style="writing-mode: vertical-rl; text-orientation: sideways-right" >
+                        <dateline>
+                            <placeName ref="#MO">Vignola</placeName><pc>,</pc>
+                            <distinct type="archaic">li</distinct> 
+                            <date when="1918-06-11">
+                            11/<add place="below" hand="author">6</add>-18<pc>.</pc>
+                            </date>
+                        </dateline>
+                    </opener>
+                    <p style="writing-mode: vertical-rl; text-orientation: sideways-right">
+                        <lb n="1"/>Con profondo affetto
+                        <lb n="2"/>ti penso<pc>.</pc> Un bacio
+                    </p>
+                    <closer style="writing-mode: vertical-rl; text-orientation: sideways-right">
+                        Tuo <signed >Giovannino</signed>
+                    </closer>
+                </div>
+                <div type="destination" facs="#cart74-4">
+                    <p>
+                        <!-- stamps -->
+                        <stamp type="postmark"> 
+                            <mentioned>
+                            <placeName ref="#MO">
+                                <unclear reason="faded" agent="time" cert="high">Vignola</unclear>
+                            </placeName>
+                            </mentioned>
+                            <date when="1918-06-11">11 GIU 18</date>
+                        </stamp>
+                        <stamp type="postage">francobollo da 5 centesimi del Regno d'Italia</stamp>
+                    </p>
+                    <p>
+                        <abbr>Gent</abbr>
+                        <address>
+                            <addrLine>
+                                <abbr>
+                                    S<damage agent="glue">ig.</damage> na
+                                </abbr>
+                            </addrLine>
+                            <addrLine><persName ref="#OT">Olivia Turtura </persName></addrLine>
+                            <addrLine>Via Girolamo Rossi 58</addrLine>
+                            <addrLine> <placeName ref="#RV">Ravenna</placeName></addrLine>
+                        </address>
+                    </p>
+                </div>
+                <div type="stampe" xml:id="stampe74">
+                    <p facs="#cart74-2">
+                        <seg>
+                            ISTITUTO ITALO-BRITANNICO<lb/>
+                            <placeName xml:id="MI">MILANO</placeName> - via SILVIO PELLICO , 6. <lb/>
+                        </seg>
+                        <seg>
+                            Visto Uff. Rev. Stampa <placeName ref="#MI">Milano</placeName> N. 3452
+                        </seg>
+                    </p>
+                    <p facs="#cart74-4">
+                        <seg>
+                            <idno>74</idno>
+                        </seg>
+                        <seg>
+                            Stab. Gustavo Modiano e C. - <placeName ref="#MI">Milano</placeName>
+                        </seg>
+                    </p>                
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
+
+
+    
+    
