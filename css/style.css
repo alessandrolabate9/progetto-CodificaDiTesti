@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap'); /*titoli e intestazioni*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap'); /*liste e barra di navigazione*/
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');/*testo*/
+
+
+html, body{
+	height:100%;
+}
+/*header fisso e sempre in primo piano*/
+#menu{
+	border: ridge 2px rgb(0, 0, 1);
+    border-radius: 8px;
+	background-color: rgb(83, 92, 104);
+	box-shadow: -30px -12px 13px -4px rgba(0,0,0,0.57);
+}
+	
+
+.menu-nos{
+
+	position: initial;
+	top: 60px;
+	width: 100%;
+	height: 60px;
+}
+.menu-stick{
+	position: fixed;
+	z-index:100;
+	top: 0px;
+	width: 100%;
+	height: 60px;
+}
+/* .slide == stili comuni a tutti i pannelli*/
+.slide{
+	width:100%;
+	height:150%;
+	position:relative;
+	padding: 80px 0;
+	text-align: center
+}
+/*tipo di contenuto simile, quindi mantengono le stesse proprietà*/
+/*ombreggiatura per dare effetto decorativo; proprietà z-index inferiore
+all'header ma superiore rispetto alle altre sezioni:
+effetto di sezioni che passano sotto alla testa*/
+#s2, #s3{
+	background-color: #ffffff;
+	box-shadow: 0 18px 14px -14px rgba(0,0,0,0.6), 0 -18px 14px -14px rgba(0,0,0,0.6);
+	z-index: 10;
+}
+
+#s4{
+	background-color: rgb(83, 92, 104);
+	box-shadow: 0 18px 14px -14px rgba(0,0,0,0.6), 0 -18px 14px -14px rgba(0,0,0,0.6);
+	z-index: 10;
+	
+}
+/*sezione con sfondo fotografico*/
+/*foto molto ampie: 1600x800px
+sfonfo fisso e non ripetuto è fondamentale per l'effetto grafico*/
+#s1{
+	height: 100%;
+	background-image: url('../img/bg.jpg');
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color:white;
+}
+
+
+ul{
+	list-style-type:none;
+	margin: 10px;
+	padding: 0px;
+	overflow: hidden;
+	text-align: center;
+}
+
+li{
+	display: inline;
+	padding: 4px;
+	border-right: solid rgb(214, 222, 228) 1px;
+	margin: 4px 4px;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+
+li a {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	height: 40px;
+	line-height: 50px;
+	font-size: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+	}
+
+	
+li:nth-child(4){
+		border-right:none;
+	}
+
+h2{
+	color: white;
+	text-align: center;
+	font-family: 'MuseoModerno', cursive;
+	margin-left: 5px;
+	margin-bottom: 15px; 
+}
+
+p{
+	text-align: left;
+	font-family: 'Open Sans', sans-serif;
+	font-size: medium;
+	margin: 20px;
+}
+#pres{
+	background-color:rgba(13, 7, 7, 0.79);
+}
+#pres p{
+	margin-top: 80px;
+	width: 80%;
+	letter-spacing: 3px;
+}
+/*header*/
+
+h1 {
+	font-family: 'MuseoModerno', cursive;
+	text-align: center;
+	font-size: 40px;
+}
+
+a:hover{
+	text-decoration: none;
+	color: rgb(214, 222, 228);
+}
+a:active, .active{
+	text-decoration: underline;
+	color: rgb(214, 222, 228);
+}
+
+li:last-child{
+	border:none;
+}
+
+
+
+#cartf1, #cartf2 {
+	display: block;
+	float: left;
+    width: 35%;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+#cartr1, #cartr2{
+	display: block;
+	float: left;
+	margin-left: 30px;
+	margin-top: 30px;
+	width: 40%;	
+}
+
+/*inizio stile buttons*/
+.buttons_uno {
+	display: inline;
+	font-family: 'MuseoModerno', cursive;
+	position: relative;
+	padding-left: 35px;
+	cursor: pointer;
+	font-size: 18px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
+  
+  .buttons_uno input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+  }
+  
+  .checkmark_uno {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: lightblue;
+	border-radius: 50%;
+  }
+  
+  
+  .buttons_uno input:checked ~ .checkmark_uno {
+	background-color: rgb(83, 92, 104);
+  }
+  
+  .checkmark_uno:after {
+	content: "";
+	position: absolute;
+	display: none;
+  }
+  
+  .buttons_uno input:checked ~ .checkmark_uno:after {
+	display: block;
+  }
+  
+  .buttons_uno .checkmark_uno:after {
+	   top: 9px;
+	  left: 9px;
+	  width: 8px;
+	  height: 8px;
+	  border-radius: 10%;
+	  background: white;
+  }
+
+  .buttons_due {
+	display: inline;
+	font-family: 'MuseoModerno', cursive;
+	position: relative;
+	padding-left: 35px;
+	cursor: pointer;
+	font-size: 18px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
+  
+  .buttons_due input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+  }
+  
+  .checkmark_due {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: lightblue;
+	border-radius: 50%;
+  }
+  
+  
+  .buttons_due input:checked ~ .checkmark_due {
+	background-color: rgb(83, 92, 104);
+  }
+  
+  .checkmark_due:after {
+	content: "";
+	position: absolute;
+	display: none;
+  }
+  
+  .buttons_due input:checked ~ .checkmark_due:after {
+	display: block;
+  }
+  
+  .buttons_due .checkmark_due:after {
+	   top: 9px;
+	  left: 9px;
+	  width: 8px;
+	  height: 8px;
+	  border-radius: 10%;
+	  background: white;
+  }
+/*fine stile buttons*/
+
+#s1{height: 100%;}
+#s2{height: 1000px;}
+#s3{height: 1000px;}
+#s4{height: 600px;}
+
+.descrivi_fronte, .descrivi_retro{
+	border-left: solid 3px black;
+	float: left;
+	display:block;
+	text-align: center;
+	margin: 50px;
+	background-color: gainsboro;
+}
+.descrivi_fronte p, .descrivi_retro p{ 
+	margin:10px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+}
+.titolo{
+	color: black;
+	font-family: 'MuseoModerno', cursive;
+	text-align:center;
+	margin-bottom: 15px; 
+}
+
+.titoletto{
+	font-family: 'MuseoModerno', cursive;
+	text-align: center;
+	font-size: medium;
+}
+
+.messaggio_retro, .messaggio_retro2, .messaggio_fronte, .messaggio_fronte2{
+	width: 50%;
+	border: solid 2px black;
+	margin:auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: gainsboro;
+}
+
+#foo{
+	margin: 30px;
+	border-left: white 10px solid;
+	border-right: white 10px solid;
+}
+/*stile ABOUT*/
+#foo p:first-child{
+	text-align:left;
+	font-family: 'Open Sans', sans-serif;
+	font-size: medium;
+	color: white;
+}
+
+#foo p:last-child{
+	text-align:right;
+	font-family: 'Open Sans', sans-serif;
+	font-size: medium;
+	color: white;
+}
+.foo_l, .foo_r{
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: large;
+} 
+
+
+#end{
+	text-align:center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: medium;
+	color: white;
+}
+
+
+/*STILE Immagini MODALI*/
+
+	#cartf1, #cartr1, #cartr2, #cartf2 {
+	cursor: pointer;
+	transition: 0.3s;
+  }
+  
+#cartf1:hover, #cartr1:hover, #cartf2:hover, #cartr2:hover {opacity: 0.5;}
+
+
+.modal {
+	display: none; 
+	position: fixed; 
+	z-index: 1; 
+	padding-top: 100px; 
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%; 
+	overflow: auto; 
+	background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0,0.9); 
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+  }
+
+  
+  .modal-content, #note2, #note1, #note3, #note4 {  
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.6s;
+	animation-name: zoom;
+	animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+	from {-webkit-transform:scale(0)} 
+	to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+	from {transform:scale(0)} 
+	to {transform:scale(1)}
+  }
+
+  .close {
+	position: absolute;
+	top: 80px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+	opacity: 1 !important;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+  }
+
+  @media only screen and (max-width: 700px){
+	.modal-content {
+	  width: 100%;
+	}
+  }
