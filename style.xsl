@@ -208,8 +208,8 @@
 
     </xsl:template>
 <!-- contenuto cartolina 74-->
-<xsl:param name="fronte0" select="tei:teiCorpus/tei:TEI[@xml:id='cart74']/tei:text[@type='cartolina']" />
-<xsl:param name="retro0" select="$fronte0/tei:body/tei:div[@type='retro']" />
+<xsl:variable name="fronte0" select="tei:teiCorpus/tei:TEI[@xml:id='cart74']/tei:text[@type='cartolina']" />
+<xsl:variable name="retro0" select="$fronte0/tei:body/tei:div[@type='retro']" />
     <xsl:template name="descrivi_contenuto1FRONTE">
 
         <div class="messaggio_fronte">
