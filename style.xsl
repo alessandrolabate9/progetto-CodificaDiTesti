@@ -159,7 +159,7 @@
                 </section>
                 <section class="slide" id="s4"> <!-- about(footer) -->
                     <xsl:call-template name="footer" />
-                    <p id="end"> Esame di Codifica dei Testi, <br/>Professore Angelo Mario Del Grosso</p>
+                    <p id="end"> Professore Angelo Mario Del Grosso,<br/>Esame di Codifica di Testi</p>
                 </section>
             </body>
         </html>
